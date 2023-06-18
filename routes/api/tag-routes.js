@@ -70,7 +70,7 @@ router.delete('/:id', async (req, res) => {
       },
     });
     console.log(deleteTag);
-  if (!deleteTagho) {
+  if (!deleteTag) {
     res.status(404).json({ message: 'No category found with that id'})
   }
     res.status(200).json(deleteTag)
